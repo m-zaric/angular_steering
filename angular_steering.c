@@ -10,8 +10,11 @@ float outputLeft = 0;
 float scale = 0;
 float deg = 0;
 
+void setup() {
+  Serial.begin(9600);
+}
 
-int main(){
+void loop() {
     yAchseSensor = analogRead(analogInPin0);
     xAchseSensor = analogRead(analogInPin1);
 
